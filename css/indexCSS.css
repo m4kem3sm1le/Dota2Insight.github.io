@@ -1,0 +1,782 @@
+@font-face {
+    src: url("../Fonts/Noto_Sans/NotoSans-Light.ttf");
+    font-family: NotoSans;
+}
+
+@font-face {
+    src: url("../Fonts/Jost/Jost-VariableFont_wght.ttf");
+    font-family: Jost;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: #0F0F10;
+    width: auto;
+}
+
+.left{
+    display: flex;
+}
+
+.right{
+    display: flex;
+}
+
+header{
+    width: auto;
+    height: 133px;
+    background: linear-gradient(180deg, #815BEC 0%, #0F0F10 100%);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainLOGO-header{
+    width: 124px;
+    height: 133px;
+    object-fit: cover;
+}
+
+.logo-name-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.Dota2Insight-Header{
+    width: 155px;
+    height: 31.47px;
+
+    font-family: NotoSans;
+    font-size: 24px;
+    text-align: center;
+
+    color: #ffffff;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+
+    padding-bottom: 2px;
+
+    margin-top: 51px;
+}
+
+.category-header{
+    display: flex;
+    margin-left: 68px;
+    margin-top: 56px;
+}
+
+.category{
+    width: auto;
+    height: 21.16px;
+
+    font-family: NotoSans;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.polygon{
+    width: 20.11px;
+    height: 12.51px;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.rect{
+    width: 20.11px;
+    height: 12.51px;
+}
+
+.login1{
+    display: flex;
+    margin-top: 48px;
+    margin-right: 55px;
+}
+
+.login2{
+    width: 152px;
+    height: 35.53px;
+
+    color: #ffffff;
+
+    border-width: 0;
+
+    font-family: Jost;
+    font-weight: 250;
+
+    background: linear-gradient(180deg, #16538C 0%, #0176D0 100%);
+}
+
+.search-box{
+    margin-top: 41px;
+    margin-right: 71px;
+    width: 458px;
+    height: 50px;
+
+    background: rgba(204, 204, 204, 0.8);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.search-ico{
+    padding-top: 10px;
+}
+
+.search-window{
+    background: rgba(204, 204, 204, 0.8); 
+    border-color: rgba(204, 204, 204, 0.8); 
+    box-shadow: 0px 0px 0px rgba(204, 204, 204, 0.8);
+}
+
+.triangle {
+    width: 12px;
+    height: 20px;
+    border-radius: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(180deg);
+}
+
+.triangle-down{
+    width: 20.11px;
+    height: 12.51px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+    transform: rotate(-180deg);
+}
+
+.up{
+    display: flex;
+}
+
+.LastGame-main{
+    max-width: 361px;
+    max-height: 343px;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 96px;
+}
+
+.background{
+    width: 361px;
+    height: 343px;
+    transform: scale(1.6);
+    object-fit: none;
+}
+
+.blur{
+    position: absolute;
+    width: 361px;
+    height: 343px;
+    left: 96px;
+    top: 203px;
+
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+}
+
+.Last-game{
+    position: absolute;
+    left: 108px;
+    top: 217px; 
+    width: 133px;
+    height: 12px;
+
+    font-family: Jost;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.lastgame-date{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 108px;
+    top: 240px;
+
+    font-family: Jost;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.lastgame-hero{
+    position: absolute;
+    width: 195.14px;
+    height: 156.35px;
+    left: 187.61px;
+    top: 243.38px;
+
+    object-fit: cover; 
+}
+
+.tree-talants{
+    position: absolute;
+    width: 51.71px;
+    height: 51.79px;
+    left: 133.08px;
+    top: 410.17px;
+}
+
+.purchares{
+    position: absolute;
+    width: 85.86px;
+    height: 59.61px;
+    left: 197.47px;
+    top: 408.21px;
+}
+
+.scepter-false{
+    position: absolute;
+    left: 296.99px;
+    top: 417.99px;
+}
+
+.shard-true{
+    position: absolute;
+    width: 21.46px;
+    height: 10.75px;
+    left: 300px;
+    top: 450.44px;
+}
+
+.win-lose{
+    position: absolute;
+    width: 58px;
+    height: 19px;
+    left: 366px;
+    top: 418px;
+
+    font-family: NotoSans;
+    font-size: 12px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background-color: #2ACB4F;
+    border-radius: 3px;
+}
+
+.lastgame-KDA{
+    position: absolute;
+    width: 53.66px;
+    height: 14.66px;
+    left: 371.34px;
+    top: 447.3px;
+
+    font-family: NotoSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.line{
+    position: absolute;
+    width: 329.78px;
+    height: 0px;
+    left: 111.61px;
+    top: 482.48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dire-hero1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 108px;
+    top: 502px;
+}
+
+.dire-hero2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 136px;
+    top: 502px;
+}
+
+.dire-hero3{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 164px;
+    top: 502px;
+}
+
+.dire-hero4{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 192px;
+    top: 502px;
+}
+
+.dire-hero5{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 220px;
+    top: 502px;
+}
+
+.lastgame-time{
+    position: absolute;
+    width: 34.15px;
+    height: 11.73px;
+    left: 260.94px;
+    top: 508.87px;
+
+    font-family: Jost;
+    font-weight: 250;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.radiant-hero1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 310px;
+    top: 502px;
+}
+
+.radiant-hero2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 338px;
+    top: 502px;
+}
+
+.radiant-hero3{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 366px;
+    top: 502px;
+}
+
+.radiant-hero4{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 394px;
+    top: 502px;
+}
+
+.radiant-hero5{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 422px;
+    top: 502px;
+}
+
+.aboutus{
+    width: 409px;
+    height: 351px;
+    margin-top: 62px;
+    margin-left: 94px;
+}
+
+.dire-aboutus{
+    width: 409px;
+    height: 351px;   
+    filter: brightness(20%);
+}
+
+.AboutUS-tittle{
+    position: absolute;
+    left: 579px;
+    top: 212px; 
+
+    font-family: Jost;
+    font-weight: 200;
+    font-size: 36px;
+
+    color: #FFFFFF;
+}
+
+.aboutus-text{
+    position: absolute;
+
+    width: 370px;
+    height: 268px;
+
+    left: 579px;
+    top: 270px;
+
+    font-family: Jost;
+    font-weight: 200;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    line-height: 1.4;
+}
+
+.functional{
+    width: 409px;
+    height: 351px;
+    margin-top: 62px;
+}
+
+.radiant-functional{
+    width: 409px;
+    height: 351px;   
+    filter: brightness(20%);
+}
+
+.Functional-tittle{
+    position: absolute;
+    left: 1160px;
+    top: 213px;
+
+    font-family: Jost;
+    font-weight: 200;
+    font-size: 36px;
+
+    color: #FFFFFF;
+}
+
+.points{
+    position: absolute;
+    width: 170px;
+    height: 18px;
+    left: 1175px;
+    top: 268px;
+
+    font-family: Jost;
+    font-weight: 200;
+    font-size: 20px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+  
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 79px;
+    margin-bottom: 31px;
+}
+
+.TopHeroes-main{
+    width: 818px;
+    height: 739px;
+
+    background: #0A0A0A;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.TopPlayers-main{
+    width: 818px;
+    height: 739px;
+    
+    background: #0A0A0A;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.TopHeroes-block{
+    width: 524px;
+    height: 73px;
+
+    background-color: #141414;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px 3px 0px 0px;
+
+    margin-top: 35px;
+    margin-left: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+.TopHeroes{
+    width: 168px;
+    height: 25px;
+
+    font-family: NotoSans;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-left: 178px;
+    
+    color: #FFFFFF;
+}
+
+.TopHeroes-category{
+    width: 759px;
+    height: 56px;
+
+    background-color: #141414;
+    border: 1px solid #FFFFFF;
+    border-radius: 0px 0px 3px 3px;
+
+    margin-left: 35px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.more-less{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 7px;
+}
+
+.TopHeroes-hero{
+    width: 759px;
+    height: 75px;
+
+    background: #17161A;
+    border-radius: 3px;
+    margin-left: 35px;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TopPlayers-block{
+    width: 524px;
+    height: 73px;
+
+    font-family: NotoSans;
+    font-weight: 400;
+    font-size: 32px;
+
+    color: #FFFFFF;
+
+    background-color: #141414;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px 3px 0px 0px;
+
+    margin-top: 35px;
+    margin-left: 35px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.TopPlayers{
+    width: 168px;
+    height: 25px;
+
+    font-family: NotoSans;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-left: 178px;
+    
+    color: #FFFFFF;
+}
+
+.TopPlayers-category{
+    width: 759px;
+    height: 56px;
+
+    background-color: #141414;
+    border: 1px solid #FFFFFF;
+    border-radius: 0px 0px 3px 3px;
+
+    margin-left: 35px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TopPlayers-player{
+    width: 759px;
+    height: 75px;
+
+    background: #17161A;
+    border-radius: 3px;
+    margin-left: 35px;
+    margin-bottom: 17px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.category-hero{
+    margin-left: 37px;
+}
+
+.category-pickrate{
+    margin-left: 77px;
+}
+
+.category-wr{
+    margin-left: 67px;
+}
+
+.category-matches{
+    margin-left: 165px;
+}
+
+.player{
+    width: 142px;
+    height: 75px;
+
+    font-family: NotoSans;
+    font-weight: 400;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+
+.hero-img{
+    width: 99px;
+    height: 58px;
+    margin-left: 22px;
+
+    border-radius: 2px;
+
+    display: flex;
+}
+
+.hero{
+    font-family: NotoSans ;
+    font-size: 20px;
+    font-weight: 250;
+
+    color: #FFFFFF;
+
+    margin-left: 73px;
+}
+
+.matches-line{
+    width: 144px;
+    height: 7px;
+
+    background: #BABABA;
+    border-radius: 2px;
+}
+
+.matches-line2{
+    width: 111px;
+    height: 7px;
+
+    background: #DD9D20;
+    border-radius: 2px;
+}
+
+footer{
+    width: auto;
+    height: 133px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #0F0F10 3.01%, #0F0F10 6.02%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-text{
+    width: auto;
+    height: auto;
+
+    font-family: Jost;
+    font-weight: 200;
+    font-size: 24px;
+
+    color: #FFFFFF;
+}
+
+.desc-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.up-footer{
+    display: flex;
+    width: 392px;
+    height: 27px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.down-footer{
+    display: flex;
+    width: 278px;
+    height: 27px;
+    justify-content: space-between;
+}
+
+.groups{
+    width: 120px;
+    height: 48px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 14px;
+}
